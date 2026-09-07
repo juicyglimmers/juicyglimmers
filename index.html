@@ -303,26 +303,35 @@
             gap: 14px;
         }
 
-        .photo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+      .photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-            background:
-                linear-gradient(
-                    140deg,
-                    #777,
-                    #3d4140
-                );
+    overflow: hidden;
 
-            text-transform: uppercase;
-            letter-spacing: 2px;
+    background:
+        linear-gradient(
+            140deg,
+            #777,
+            #3d4140
+        );
 
-            color: rgba(255,255,255,0.6);
-            font-size: 11px;
-        }
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
-        .photo.large {
+    color: rgba(255,255,255,0.6);
+    font-size: 11px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.photo.large {
             grid-row: span 2;
         }
 
@@ -751,33 +760,34 @@
             </h2>
 
             <p>
-                These are temporary placeholders.
-                Later, we can replace them with your
-                own photography.
+                 A few moments I've captured along the way. 
+    Every places, light, and little scenes that caught my eye.
             </p>
 
         </div>
 
 
-        <div class="photo-grid">
+<div class="photo-grid">
 
-            <div class="photo large">
-                SunsetinAkiyoshidai.jpeg
-            </div>
+    <div class="photo large">
+        <img src="SunsetinAkiyoshidai.jpeg" alt="Sunset in Akiyoshidai">
+    </div>
 
-            <div class="photo">
-                RiverinNagato.jpeg
-            </div>
+    <div class="photo">
+        <img src="RiverinNagato.jpeg" alt="River in Nagato">
+    </div>
 
-            <div class="photo">
-                HawkinHagi.jpeg
-            </div>
+    <div class="photo">
+        <img src="HawkinHagi.jpeg" alt="Hawkin in Hagi">
+    </div>
 
-            <div class="photo">
-                YOUR PHOTO
-            </div>
+    <div class="photo">
+        <img src="SunsetinAkiyoshidai.jpeg" alt="Akiyoshidai sunset">
+    </div>
 
-        </div>
+</div>
+
+    
 
     </section>
 
